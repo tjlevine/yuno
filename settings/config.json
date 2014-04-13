@@ -19,7 +19,6 @@
 
 // Directives begin here. Happy hacking. :) ------------------------------------
 
-
 {
     // Path to the top-level folder that contains the test cases, either
     // absolute or relative to yuno.py. If you followed the setup instructions
