@@ -82,6 +82,11 @@
     "compiler_invocation":
         "java -cp {classpath} {compiler_executable} {testcase}",
 
+    // Should yuno issue a warning when the exit code of the compiler executable
+    // is non zero?
+    "warn_on_nonzero_exit_code":
+        false,
+
 
     // Message templates -------------------------------------------------------
 
