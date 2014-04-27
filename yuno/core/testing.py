@@ -154,12 +154,13 @@ class Test(object):
             # The compiler process halted with a nonzero return code. It's best
             # not to assume this is a total failure, so let's warn them in case
             # they're just misusing exit codes.
-            harness.test_warned(
-                self,
-                "Test `%s` finished with exit code %d." % (
-                    compile_command, e.returncode
+            if config.warn_on_nonzero_exit_code:
+                harness.test_warned(
+                    self,
+                    "Test `%s` finished with exit code %d." % (
+                        compile_command, e.returncode
+                    )
                 )
-            )
             output = e.output
 
         try:
