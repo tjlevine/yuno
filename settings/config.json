@@ -63,7 +63,7 @@
     //
     // Tl;DR LEAVE OFF THE ".class".
     //
-    "compiler_executable": "RC",
+    "compiler_executable": "rc.parse.RC",
 
     // The command sent to your OS when it's time to run the compiler on a
     // test case. Yuno won't expect a certain output or try to pipe it
