@@ -79,7 +79,7 @@
     // {testcase} - path/to/current/testcase.rc
     //
     "compiler_invocation":
-        "java -cp {classpath} {compiler_executable} {testcase}",
+        "../rcc-run {testcase}",
 
     // Should yuno issue a warning when the exit code of the compiler executable
     // is non zero?
